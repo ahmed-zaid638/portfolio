@@ -1,13 +1,150 @@
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700&display=swap");
 
+/* General styles  */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Bai Jamjuree";
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --color-body: #b6cbce;
+  --color-heading: #eef3db;
+  --color-base: #033f47;
+  --color-base2: #022a30;
+  --color-brand: #e0f780;
+  --color-brand2: #deff58;
+  --sidbar-width: 240px;
+  --font-base: "Bai Jamjuree";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-heading);
+}
+a {
+  text-decoration: none;
+  color: var(--color-body);
+  transition: all 0.4s ease;
+}
+a:hover {
+  color: var(--color-brand);
+}
+img {
+  width: 100%;
+}
+
+body {
+}
+.container-fluid {
+  width: 90%;
+}
+.content-wapper {
+  margin-top: 74px;
+}
+/* NavBar  */
+.navbar {
+  background-color: var(--color-base) !important;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  padding: 17px 0;
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler-icon {
+  background-image: url(../images/navbar-icon-bar.svg) !important;
+}
+.navbar-toggler:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.navbar-brand img {
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 5px solid var(--color-brand);
+}
+.navbar .nav-link {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+.navbar-nav .nav-link.active{
+  color: var(--color-brand2);
+}
+@media (min-width: 992px) {
+  .navbar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    background: linear-gradient(rgba(3, 63, 71, 0.8), rgba(3, 63, 71, 0.8)),
+      url(../images/sidebar-img.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .navbar > .container-fluid {
+    flex-direction: column;
+  }
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  .navbar-nav .nav-link.active {
+  }
+
+  .content-wapper {
+    margin-left: 250px;
+    margin-top: 0;
+  }
+}
+
+/* Home  */
+.home {
+  background-color: var(--color-base2);
+  background-color: var(--color-base2);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.home p {
+  color: white;
+}
+.home h1 span {
+  color: var(--color-brand2);
+}
+
+.btn-brand {
+  color: var(--color-base);
+  background-color: var(--color-brand);
+  padding: 10px 20px;
+}
+.btn-brand:hover {
+  background-color: var(--color-brand2);
+}
+
+/* projects */
+.projects {
+  height: 200vh;
+  background-color: aquamarine;
+}
+/* skills */
 
 
-
-
+/* contact */
 
