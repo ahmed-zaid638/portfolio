@@ -3,6 +3,8 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
+import ecommerce from "@/public/ecommerce.png";
+import dashboard from "@/public/dashboard.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
@@ -66,14 +68,18 @@ export const projectsData = [
     description:
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+    imageUrl: ecommerce,
+    link : "https://amazon-nextjs-theta.vercel.app/" , 
+    github : "https://github.com/ahmed-zaid638/Amazon-nextjs"
   },
   {
     title: "Dashboard",
     description:
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+    imageUrl: dashboard,
+    link : "https://dashboard-react-taupe.vercel.app/" , 
+    github : "https://github.com/ahmed-zaid638/Dashboard-React"
   },
   {
     title: "Social media app",
@@ -81,6 +87,8 @@ export const projectsData = [
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg,
+    link : "https://amazon-nextjs-theta.vercel.app/" , 
+    github : "https://github.com/ahmed-zaid638/Amazon-nextjs"
   },
 ] as const;
 
