@@ -9,6 +9,7 @@ import { FaGithub } from "react-icons/fa";
 
 type ProjectProps = (typeof projectsData)[number];
 
+
 export default function Project({
   title,
   description,
@@ -62,9 +63,10 @@ export default function Project({
 
 
 
-        <Link href="https://dashboard-react-taupe.vercel.app/" target="blank" >
+        <Link href={link} target="blank" >
           <Image
             src={imageUrl}
+            
             alt="Project I worked on"
             quality={95}
             className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
@@ -81,9 +83,6 @@ export default function Project({
         group-even:right-[initial] group-even:-left-40"
           />
         </Link>
-
-
-
 
       </section>
     </motion.div>
